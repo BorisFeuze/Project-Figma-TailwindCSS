@@ -4,23 +4,771 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Figma & TailwindCSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
-</head>
+    <style type="text/tailwindcss">
+      @layer components {
+        .nav-header-left {
+          @apply flex flex-col;
+          a {
+            @apply py-[3rem];
+          }
+          div {
+            @apply w-full h-1 bg-[#008248];
+          }
+        }
+        .nav-header-right {
+          @apply flex justify-end gap-x-6 lg:gap-x-10 items-center w-5/4  lg:text-2xl;
 
+          button {
+            @apply px-[1rem] lg:px-[1.125rem] pt-[.125rem] pb-[0.25rem] border border-solid border-black rounded-4xl text-[#000000];
+          }
+        }
+        .nav-section-get-custoum {
+          @apply flex py-[2rem] items-end;
+
+          a {
+            @apply text-4xl;
+          }
+          div {
+            @apply text-yellow-500;
+          }
+        }
+
+        .container-nav-section-get-custom {
+          @apply flex flex-col w-30 items-center justify-center;
+        }
+      }
+    </style>
   </head>
+
   <body>
+    <!-- This section will be design by Boris start -->
     <header>
-      <!-- That is the section of the Header -->
+      <div
+        class="flex flex-col justify-center pr-[2rem] pl-[2rem] bg-[#f1f8f6] w-full"
+      >
+        <div class="flex justify-start w-full items-center gap-x-[2rem]">
+          <div class="w-[5rem]">
+            <img
+              class="w-full h-auto object-cover"
+              src="https://th.bing.com/th?q=Starbucks+Logo+Neu&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=de-DE&cc=DE&setlang=de&adlt=moderate&t=1&mw=247"
+              alt="Starbucks logo"
+            />
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <ul
+              class="flex justify-around items-center w-[15rem] lg:w-[30rem] text-sm lg:text-2xl font-bold"
+            >
+              <li class="nav-header-left">
+                <a href="#">MENU</a>
+                <div class="hidden"></div>
+              </li>
+              <li class="nav-header-left">
+                <a href="#">REWARDS</a>
+                <div class=""></div>
+              </li>
+              <li class="nav-header-left">
+                <a href="#">GIFT CARDS</a>
+                <div class="hidden"></div>
+              </li>
+            </ul>
+            <div class="flex justify-between items-center lg:w-1/3 text-xs">
+              <div class="flex w-full items-center bg-inherit">
+                <a class="w-[2rem]" href="#"
+                  ><img
+                    class="w-full h-auto object-cover bg-inherit"
+                    src="https://th.bing.com/th/id/OIP.eb6gE0z5VzXFPfDI5YtYSwHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><p class="inline text-xs lg:text-3xl">Find a store</p></a
+                >
+              </div>
+              <div class="nav-header-right">
+                <button><a href="#">Sign in</a></button>
+                <button class="bg-black text-[#f1f8f6]">
+                  <a href="#">Join now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#1e3932] flex items-center pl-[9rem] py-4 text-[#f1f8f6] text-ms font-bold"
+      >
+        <p>Starbucks® Rewards</p>
+      </div>
     </header>
+    <!-- This section will be design by Boris end -->
 
     <main>
-      <!-- Here we must have the first section beginn-->
+      <section>
+        <!-- This section "free coffee" will be design by Vibtbuti start -->
+        <div class="relative">
+          <img
+            class="w-full object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen"
+            src="assets/free-coffee.webp"
+            alt="Reward Image"
+          />
+          <div class="absolute top-[35%] left-0 pl-10">
+            <p
+              class="uppercase font-bold font-sans text-[0.8rem] sm:text-[1rem] md:text-[1.5rem] lg:text-[2rem]"
+            >
+              Free Coffee <br />is a tap away
+            </p>
+            <p
+              class="font-sans text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] mt-2 mb-2"
+            >
+              Join now to start earning Rewards.
+            </p>
+            <button
+              class="bg-[#008248] cursor-pointer text-[0.5rem] sm:text-[0.5rem] md:text-[0.7rem] lg:text-[0.9rem] font-bold font-sans text-white rounded-[2rem] px-4 pt-1 pb-[0.4rem] text-center"
+            >
+              Join now
+            </button>
+            <p
+              class="font-sans text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] mt-2"
+            >
+              Or <a class="underline" href="#">Join in the app</a> for the best
+              experience.
+            </p>
+          </div>
+        </div>
 
-      <!-- Here we must have the first section end -->
+        <!-- This section "free coffee" will be design by Vibtbuti end -->
+      </section>
+      <!-- This section "Getting...." will be design by siri start -->
+      <section class="py-16 px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Getting started is easy</h2>
+        <p class="text-lg mb-12">
+          Earn Stars and get rewarded in a few easy steps.
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row justify-center items-start gap-14 max-w-6xl mx-auto"
+        >
+          <!-- Step 1 -->
+          <div
+            class="flex flex-col items-center text-center w-[33.33%] sm:w-full"
+          >
+            <div
+              class="text-[#008248] text-2xl border-2 border-[#008248] rounded-full w-12 h-12 flex items-center justify-center mb-4 font-bold"
+            >
+              1
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Create an account</h3>
+            <p class="text-gray-600">
+              To get started,
+              <a href="#" class="text-[#008248] underline">join now</a>. You can
+              also
+              <a href="#" class="text-[#008248] underline">join in the app</a>
+              to get access to the full range of Starbucks® Rewards benefits.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="flex flex-col items-center text-center w-[33.33%] sm:w-full"
+          >
+            <div
+              class="text-[#008248] text-2xl border-2 border-[#008248] rounded-full w-12 h-12 flex items-center justify-center mb-4 font-bold"
+            >
+              2
+            </div>
+            <h3 class="font-semibold text-lg mb-2">
+              Order and pay how you’d like
+            </h3>
+            <p class="text-gray-600">
+              Use cash, credit/debit card or save some time and pay right
+              through the app. You’ll collect Stars all ways.
+              <a href="#" class="text-[#008248] underline">Learn how</a>
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="flex flex-col items-center text-center w-[33.33%] sm:w-full"
+          >
+            <div
+              class="text-[#008248] text-2xl border-2 border-[#008248] rounded-full w-12 h-12 flex items-center justify-center mb-4 font-bold"
+            >
+              3
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Earn Stars, get Rewards</h3>
+            <p class="text-gray-600">
+              As you earn Stars, you can redeem them for Rewards—like free food,
+              drinks, and more. Start redeeming with as little as 25 Stars!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- This section "Getting...."  will be design by siri end -->
+      <!-- This section "customize...& Get your...." will be design by Boris start -->
+      <section>
+        <!-- This section "customize...& Get your...." will be design by Boris start -->
+        <div class="flex flex-col items-center bg-[#f1f8f6] text-2xl font-bold">
+          <h2 class="py-10">Get your favorites for free</h2>
+          <div class="flex justify-center items-center gap-x-13">
+            <div class="container-nav-section-get-custom">
+              <div class="nav-section-get-custoum">
+                <a href="#">25</a>
+                <div>★</div>
+              </div>
+              <div class="w-full h-1 bg-[#008248]"></div>
+            </div>
+            <div class="container-nav-section-get-custom">
+              <div class="nav-section-get-custoum">
+                <a class="text-4xl" href="#">50</a>
+                <div class="text-yellow-500">★</div>
+              </div>
+              <div class="w-full h-1 bg-[#008248] hidden"></div>
+            </div>
+            <div class="container-nav-section-get-custom">
+              <div class="nav-section-get-custoum">
+                <a href="#">150</a>
+                <div>★</div>
+              </div>
+              <div class="w-full h-1 bg-[#008248] hidden"></div>
+            </div>
+            <div class="container-nav-section-get-custom">
+              <div class="nav-section-get-custoum">
+                <a href="#">200</a>
+                <div>★</div>
+              </div>
+              <div class="w-full h-1 bg-[#008248] hidden"></div>
+            </div>
+            <div class="container-nav-section-get-custom">
+              <div class="nav-section-get-custoum">
+                <a href="#">400</a>
+                <div>★</div>
+              </div>
+              <div class="w-full h-1 bg-[#008248] hidden"></div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div class="flex justify-center items-center bg-[#d4e9e2]">
+          <div>
+            <img
+              class="w-full h-auto object-cover"
+              src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/25.png"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-center items-start w-xs">
+            <h3 class="text-xl font-bold m-5">Customize your drink</h3>
+            <p>
+              Make your drink just right with an extra expresso shot, dairy
+              substitute or a dash of your favorite syrup
+            </p>
+          </div>
+        </div>
+        <!-- This section "customize...& Get your...." will be design by Boris end -->
+      </section>
+      <section>
+        <!-- This section "Endless...." will be design by Vibtbuti start -->
+        <div class="text-center mx-[4rem] my-[2rem]">
+          <p class="font-semibold font-sans text-[2rem]">Endless Extras</p>
+          <p
+            class="font-sans text-[1rem]] max-w-[60%] text-center m-auto mt-[1rem]"
+          >
+            Joining Starbucks® Rewards means unlocking access to exclusive
+            benefits. Say hello to easy ordering, tasty Rewards and—yes, free
+            coffee.
+          </p>
+          <div
+            class="flex flex-col mt-[4rem] sm:flex-col md:flex-row lg:flex-row"
+          >
+            <div
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
+            >
+              <img
+                class="w-[100px] h-[100px]"
+                src="assets/fun-freebies.jpg"
+                alt="Fun Freebies"
+              />
+
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Fun freebies</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Not only can you earn free food, drinks and more, look forward
+                  to a birthday treat on us.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
+            >
+              <img
+                class="w-[100px] h-[100px]"
+                src="assets/order-and-pay-ahead.jpg"
+                alt="Order and Pay Ahead"
+              />
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Order & pay ahead</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Master the art of ordering ahead with saved favorites and
+                  payment methods.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
+            >
+              <img
+                class="w-[100px] h-[100px]"
+                src="assets/get-to-free-faster.jpg"
+                alt="Coffee with Whipped Cream"
+              />
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Get to free faster</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Earn Stars even quicker with Bonus Star challenges, Double
+                  Star Days and exciting games.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This section "Endless...." will be design by Vibtbuti end -->
+      </section>
+      <section>
+        <div class="bg-[#f3f1e7] text-black-800 px-6 py-12">
+          <div class="max-w-6xl mx-auto">
+            <h1 class="text-2xl font-semibold text-center mb-4">
+              Cash or card, you earn Stars
+            </h1>
+            <p class="text-center text-black-700 mb-16 max-w-2xl mx-auto">
+              No matter how you pay, you can earn Stars with your morning
+              coffee. Those Stars add up to (really delicious) Rewards.
+            </p>
+
+            <!-- 1★ per dollar section -->
+            <div class="flex flex-col lg:flex-row gap-10 mb-12">
+              <div class="flex-1 flex flex-col md:flex-row items-start gap-6">
+                <div class="min-w-[150px]">
+                  <div class="text-2xl font-semibold text-black-800">
+                    1★ per dollar
+                  </div>
+                  <p class="text-sm text-black-600">Pay as you go</p>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <img
+                    src="assets/1dollar.png"
+                    alt="1 Star"
+                    class="w-20 h-auto"
+                  />
+                  <div>
+                    <h3 class="font-semibold text-xl">
+                      Scan and pay separately
+                    </h3>
+                    <p class="text-black-700 mt-2">
+                      Use cash or credit/debit card at the register.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1 flex flex-col md:flex-row items-start gap-6">
+                <div class="min-w-[150px] hidden md:block"></div>
+                <div class="flex gap-4 items-start">
+                  <img
+                    src="assets/saveapp.png"
+                    alt="Save in app"
+                    class="w-20 h-auto"
+                  />
+                  <div>
+                    <h3 class="font-semibold text-xl">
+                      Save payment in the app
+                    </h3>
+                    <p class="text-black-700 mt-2">
+                      Check-out faster by saving a credit/debit card or PayPal
+                      to your account. You’ll be able to order ahead or scan and
+                      pay at the register in one step.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t pt-10 mb-12"></div>
+
+            <!-- 2★ per dollar section -->
+            <div class="flex flex-col lg:flex-row gap-10 mb-12">
+              <div class="flex-1 flex flex-col md:flex-row items-start gap-6">
+                <div class="min-w-[150px]">
+                  <div class="text-2xl font-semibold text-black-800">
+                    2★ per dollar
+                  </div>
+                  <p class="text-sm text-black-600">Add funds in the app</p>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <img
+                    src="assets/2dollar.png"
+                    alt="2 Stars"
+                    class="w-20 h-auto"
+                  />
+                  <div>
+                    <h3 class="font-semibold text-xl">Preload</h3>
+                    <p class="text-black-700 mt-2">
+                      To save time and earn Stars twice as fast, add money to
+                      your digital Starbucks Card using any payment option. Scan
+                      and pay in one step or order ahead in the app.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1 flex flex-col md:flex-row items-start gap-6">
+                <div class="min-w-[150px] hidden md:block"></div>
+                <div class="flex gap-4 items-start">
+                  <img
+                    src="assets/register.png"
+                    alt="Register gift card"
+                    class="w-20 h-auto"
+                  />
+                  <div>
+                    <h3 class="font-semibold text-xl">
+                      Register your gift card
+                    </h3>
+                    <p class="text-black-700 mt-2">
+                      Then use it to pay through the app. You can even
+                      consolidate balances from multiple cards in one place.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t pt-10 mb-12"></div>
+
+            <!-- 3★ per dollar section -->
+            <div
+              class="flex flex-col lg:w-1/2 md:w-full sm:w-full lg:flex-row gap-10"
+            >
+              <div class="flex-1 flex flex-col md:flex-row items-start gap-6">
+                <div class="min-w-[150px]">
+                  <div class="text-2xl font-semibold text-black-800">
+                    Up to 3★ per dollar
+                  </div>
+                  <p class="text-sm text-black-600">
+                    With Starbucks Rewards Visa card
+                  </p>
+                </div>
+                <div class="flex gap-4 items-start">
+                  <img
+                    src="assets/3dollar.png"
+                    alt="3 Stars"
+                    class="w-20 h-[70px] object-contain"
+                  />
+                  <div>
+                    <h3 class="font-semibold text-xl">
+                      Earn Stars even faster
+                    </h3>
+                    <p class="text-black-700 mt-2">
+                      Earn Stars on all purchases you make with our
+                      <a href="#" class="text-green-600 underline"
+                        >credit card</a
+                      >
+                      in and outside of Starbucks. Earn 1 Star per $1 when you
+                      digitally preload your Starbucks Card with your Starbucks®
+                      Rewards Visa® Card, and earn 2 Stars per $1 when you pay
+                      with that preloaded Starbucks Card.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
-  </body>
+    <footer class="py-[2rem] bg-[#1e3932]">
+      <!-- This section will be design by Vibtuti start -->
+      <div
+        class="max-w-7xl flex flex-col sm:flex-col md:flex-row lg:flex-row mx-[4rem] gap-6"
+      >
+        <div
+          class="flex flex-col flex-1 text-center sm:text-start md:text-start lg:text-start"
+        >
+          <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
+            About Us
+          </p>
 
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f3f1e7] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Our Company</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Our Coffee</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >About Starbucks</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Starbucks Archive</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Investor Relations</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Customer Service</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
+          <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
+            Careers
+          </p>
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Culture and Values</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Belonging at Starbucks</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >College Achievement Plan</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Alumni Community</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >U.S. Careers</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >International Careers</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
+          <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
+            Social Impact
+          </p>
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Communities</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Starbucks Foundation</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Sustainability</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Environmental and Social Impact Reporting</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
+          <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
+            For Business Partners
+          </p>
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Landlord Support Center</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Suppliers</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Corporate Gift Card Sales</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Office and Foodservice Coffee</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
+          <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
+            Order and Pick Up
+          </p>
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order on the App</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order on the Web</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Delivery</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order and Pick Up Options</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Explore and Find Coffee for Home</a
+            >
+          </div>
+        </div>
+      </div>
+      <hr class="my-[2rem] border border-[#f1f8f6] mx-[4rem]" />
+
+      <div class="mx-[4rem]">
+        <div
+          class="flex flex-row justify-center sm:justify-center md:justify-start lg:justify-start"
+        >
+          <a
+            class="w-[2rem] h-[2rem] flex rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+            href="#"
+            ><i class="fa-brands fa-spotify text-[2.1rem] text-[#f1f8f6]"></i
+          ></a>
+          <a
+            class="w-[2rem] h-[2rem] flex bg-[#f1f8f6] rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+            href="#"
+            ><i class="fa-brands fa-facebook-f text-[#1e3932]"></i
+          ></a>
+
+          <a
+            href="#"
+            class="w-[2rem] h-[2rem] flex bg-gray-50 rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+            ><i class="fa-brands fa-pinterest-p text-[#1e3932]"></i
+          ></a>
+          <a
+            href="#"
+            class="w-[2rem] h-[2rem] flex bg-gray-50 rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+            ><i class="fa-brands fa-instagram text-1xl text-[#1e3932]"></i
+          ></a>
+          <a
+            href="#"
+            class="w-[2rem] h-[2rem] flex bg-gray-50 rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+            ><i class="fab fa-brands fa-youtube text-[#1e3932]"></i
+          ></a>
+          <a
+            href="#"
+            class="w-[2rem] h-[2rem] flex bg-white rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
+          >
+            <i class="fab fa-twitter text-[#1e3932]"></i>
+          </a>
+        </div>
+        <div
+          class="flex flex-col mt-[1rem] text-center sm:text-center md:text-start lg:text-start"
+        >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Privacy Notice</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Consumer Health Privacy Notice</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Terms of Use</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Do Not Share My Personal Information</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >CA Supply Chain Act</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Accessibility</a
+          >
+          <a
+            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
+            href="#"
+            >Cookie Preferences</a
+          >
+          <p class="text-white text-[0.8rem] mt-[1rem] font-sans">
+            &copy; 2025 Starbucks Coffee Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+      <!-- This section will be design by Vibtuti end -->
+    </footer>
+  </body>
 </html>
