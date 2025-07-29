@@ -29,7 +29,7 @@
         }
         .nav-section-get-custoum {
           @apply flex py-[2rem] items-end;
-        
+
           a {
             @apply text-4xl;
           }
@@ -39,9 +39,8 @@
         }
 
         .container-nav-section-get-custom {
-          @apply flex flex-col w-30 items-center justify-center
+          @apply flex flex-col w-30 items-center justify-center;
         }
-     
       }
     </style>
   </head>
@@ -49,51 +48,59 @@
   <body>
     <!-- This section will be design by Boris start -->
     <header>
-      <div class="flex flex-col justify-center pr-[2rem] pl-[2rem] bg-[#f1f8f6] w-full">
+      <div
+        class="flex flex-col justify-center pr-[2rem] pl-[2rem] bg-[#f1f8f6] w-full"
+      >
         <div class="flex justify-start w-full items-center gap-x-[2rem]">
-            <div class="w-[5rem]">
-              <img
-                class="w-full h-auto object-cover"
-                src="https://th.bing.com/th?q=Starbucks+Logo+Neu&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=de-DE&cc=DE&setlang=de&adlt=moderate&t=1&mw=247"
-                alt="Starbucks logo"/>
-            </div>
-            <div class="flex justify-between items-center w-full">
-              <ul class="flex justify-around items-center w-[15rem] lg:w-[30rem] text-sm lg:text-2xl font-bold" >
-                <li class="nav-header-left">
-                  <a href="#">MENU</a>
-                  <div class="hidden"></div>
-                </li>
-                <li class="nav-header-left">
-                  <a href="#">REWARDS</a>
-                  <div class=""></div>
-                </li>
-                <li class="nav-header-left">
-                  <a href="#">GIFT CARDS</a>
-                  <div class="hidden"></div>
-                </li>
-              </ul>
-              <div class="flex justify-between items-center  lg:w-1/3 text-xs">
-                <div class="flex w-full items-center bg-inherit">
-                  <a class="w-[2rem]" href="#"
-                    ><img
-                      class="w-full h-auto object-cover bg-inherit"
-                      src="https://th.bing.com/th/id/OIP.eb6gE0z5VzXFPfDI5YtYSwHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-                      alt=""
-                  /></a>
-                  <a href="#"><p class="inline text-xs lg:text-3xl">Find a store</p></a>
-                </div>
-                <div class="nav-header-right">
-                  <button><a href="#">Sign in</a></button>
-                  <button class="bg-black text-[#f1f8f6]"><a href="#">Join now</a></button>
-                </div>
+          <div class="w-[5rem]">
+            <img
+              class="w-full h-auto object-cover"
+              src="https://th.bing.com/th?q=Starbucks+Logo+Neu&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=de-DE&cc=DE&setlang=de&adlt=moderate&t=1&mw=247"
+              alt="Starbucks logo"
+            />
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <ul
+              class="flex justify-around items-center w-[15rem] lg:w-[30rem] text-sm lg:text-2xl font-bold"
+            >
+              <li class="nav-header-left">
+                <a href="#">MENU</a>
+                <div class="hidden"></div>
+              </li>
+              <li class="nav-header-left">
+                <a href="#">REWARDS</a>
+                <div class=""></div>
+              </li>
+              <li class="nav-header-left">
+                <a href="#">GIFT CARDS</a>
+                <div class="hidden"></div>
+              </li>
+            </ul>
+            <div class="flex justify-between items-center lg:w-1/3 text-xs">
+              <div class="flex w-full items-center bg-inherit">
+                <a class="w-[2rem]" href="#"
+                  ><img
+                    class="w-full h-auto object-cover bg-inherit"
+                    src="https://th.bing.com/th/id/OIP.eb6gE0z5VzXFPfDI5YtYSwHaHa?w=190&h=190&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><p class="inline text-xs lg:text-3xl">Find a store</p></a
+                >
+              </div>
+              <div class="nav-header-right">
+                <button><a href="#">Sign in</a></button>
+                <button class="bg-black text-[#f1f8f6]">
+                  <a href="#">Join now</a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div></div>
       <div
-        class="bg-[#1e3932] flex items-center pl-[9rem] py-4 text-[#f1f8f6] text-ms font-bold">
+        class="bg-[#1e3932] flex items-center pl-[9rem] py-4 text-[#f1f8f6] text-ms font-bold"
+      >
         <p>Starbucks® Rewards</p>
       </div>
     </header>
@@ -104,23 +111,29 @@
         <!-- This section "free coffee" will be design by Vibtbuti start -->
         <div class="relative">
           <img
-            class="w-full h-screen"
+            class="w-full object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen"
             src="assets/free-coffee.webp"
             alt="Reward Image"
           />
-          <div class="absolute top-[35%] left-0 pl-10 text-[2rem]">
-            <p class="uppercase font-bold font-sans">
+          <div class="absolute top-[35%] left-0 pl-10">
+            <p
+              class="uppercase font-bold font-sans text-[0.8rem] sm:text-[1rem] md:text-[1.5rem] lg:text-[2rem]"
+            >
               Free Coffee <br />is a tap away
             </p>
-            <p class="font-sans text-[1.2rem] mt-2">
+            <p
+              class="font-sans text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] mt-2 mb-2"
+            >
               Join now to start earning Rewards.
             </p>
             <button
-              class="bg-[#008248] text-[1rem] font-bold font-sans text-white rounded-[2rem] px-4 py-1 text-center"
+              class="bg-[#008248] text-[0.5rem] sm:text-[0.5rem] md:text-[0.7rem] lg:text-[0.9rem] font-bold font-sans text-white rounded-[2rem] px-4 pt-1 pb-[0.4rem] text-center"
             >
               Join now
             </button>
-            <p class="font-sans text-[1.2rem] mt-2">
+            <p
+              class="font-sans text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] mt-2"
+            >
               Or <a class="underline" href="#">Join in the app</a> for the best
               experience.
             </p>
@@ -196,7 +209,7 @@
           <h2 class="py-10">Get your favorites for free</h2>
           <div class="flex justify-center items-center gap-x-13">
             <div class="container-nav-section-get-custom">
-              <div class="nav-section-get-custoum" >
+              <div class="nav-section-get-custoum">
                 <a href="#">25</a>
                 <div>★</div>
               </div>
@@ -262,63 +275,72 @@
             benefits. Say hello to easy ordering, tasty Rewards and—yes, free
             coffee.
           </p>
-          <div class="flex flex-row text-center mt-[4rem]">
+          <div
+            class="flex flex-col mt-[4rem] sm:flex-col md:flex-row lg:flex-row"
+          >
             <div
-              class="flex-grow-1 w-[33%] flex flex-col items-center text-center"
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
             >
               <img
                 class="w-[100px] h-[100px]"
                 src="assets/fun-freebies.jpg"
                 alt="Fun Freebies"
               />
-              <p class="font-semibold mt-[1.5rem]">Fun freebies</p>
-              <p class="mt-[1rem] mx-[1rem]">
-                Not only can you earn free food, drinks and more, look forward
-                to a birthday treat on us.
-              </p>
-              <a
-                class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
-                href="#"
-                >Learn more</a
-              >
+
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Fun freebies</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Not only can you earn free food, drinks and more, look forward
+                  to a birthday treat on us.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
             </div>
             <div
-              class="flex flex-col flex-grow-1 w-[33%] items-center text-center"
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
             >
               <img
                 class="w-[100px] h-[100px]"
                 src="assets/order-and-pay-ahead.jpg"
                 alt="Order and Pay Ahead"
               />
-              <p class="font-semibold mt-[1.5rem]">Order & pay ahead</p>
-              <p class="mt-[1rem] mx-[1rem]">
-                Master the art of ordering ahead with saved favorites and
-                payment methods.
-              </p>
-              <a
-                class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
-                href="#"
-                >Learn more</a
-              >
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Order & pay ahead</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Master the art of ordering ahead with saved favorites and
+                  payment methods.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
             </div>
             <div
-              class="flex flex-col flex-grow-1 w-[33%] items-center text-center"
+              class="flex-grow-1 w-full sm:w-full md-[33%] lg-[33%] flex flex-row sm:flex-row md:flex-col lg:flex-col items-center justify-center-center"
             >
               <img
                 class="w-[100px] h-[100px]"
                 src="assets/get-to-free-faster.jpg"
                 alt="Coffee with Whipped Cream"
               />
-              <p class="font-semibold mt-[1.5rem]">Get to free faster</p>
-              <p class="mt-[1rem] mx-[1rem]">
-                Earn Stars even quicker with Bonus Star challenges, Double Star
-                Days and exciting games.
-              </p>
-              <a
-                class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
-                href="#"
-                >Learn more</a
-              >
+              <div class="">
+                <p class="font-semibold mt-[1.5rem]">Get to free faster</p>
+                <p class="mt-[1rem] mx-[1rem]">
+                  Earn Stars even quicker with Bonus Star challenges, Double
+                  Star Days and exciting games.
+                </p>
+                <a
+                  class="underline mt-[1rem] text-[#008248] text-[0.9rem] font-semibold"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -464,167 +486,192 @@
 
     <footer class="py-[2rem] bg-[#1e3932]">
       <!-- This section will be design by Vibtuti start -->
-      <div class="flex flex-row justify-evenly">
-        <div class="flex flex-col max-w-[200px]">
+      <div
+        class="max-w-7xl flex flex-col sm:flex-col md:flex-row lg:flex-row mx-[4rem] gap-6"
+      >
+        <div
+          class="flex flex-col flex-1 text-center sm:text-start md:text-start lg:text-start"
+        >
           <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
             About Us
           </p>
-          <a
-            class="mt-[1rem] text-[#f3f1e7] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Our Company</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Our Coffee</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >About Starbucks</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Starbucks Archive</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Investor Relations</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Customer Service</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Contact Us</a
-          >
+
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f3f1e7] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Our Company</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Our Coffee</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >About Starbucks</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Starbucks Archive</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Investor Relations</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Customer Service</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Contact Us</a
+            >
+          </div>
         </div>
-        <div class="flex flex-col max-w-[200px]">
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
           <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
             Careers
           </p>
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Culture and Values</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Belonging at Starbucks</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >College Achievement Plan</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Alumni Community</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >U.S. Careers</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >International Careers</a
-          >
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Culture and Values</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Belonging at Starbucks</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >College Achievement Plan</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Alumni Community</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >U.S. Careers</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >International Careers</a
+            >
+          </div>
         </div>
-        <div class="flex flex-col max-w-[200px]">
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
           <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
             Social Impact
           </p>
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Communities</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Starbucks Foundation</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Sustainability</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Environmental and Social Impact Reporting</a
-          >
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Communities</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Starbucks Foundation</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Sustainability</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Environmental and Social Impact Reporting</a
+            >
+          </div>
         </div>
-        <div class="flex flex-col max-w-[200px]">
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
           <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
             For Business Partners
           </p>
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Landlord Support Center</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Suppliers</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Corporate Gift Card Sales</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Office and Foodservice Coffee</a
-          >
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Landlord Support Center</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Suppliers</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Corporate Gift Card Sales</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Office and Foodservice Coffee</a
+            >
+          </div>
         </div>
-        <div class="flex flex-col max-w-[200px]">
+        <div
+          class="flex flex-col flex-1 text-center sm:text-center md:text-start lg:text-start"
+        >
           <p class="text-[#f1f8f6] text-[1.2rem] font-semibold font-sans">
             Order and Pick Up
           </p>
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Order on the App</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Order on the Web</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Delivery</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Order and Pick Up Options</a
-          >
-          <a
-            class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
-            href="#"
-            >Explore and Find Coffee for Home</a
-          >
+          <div class="flex flex-col">
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order on the App</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order on the Web</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Delivery</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Order and Pick Up Options</a
+            >
+            <a
+              class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:text-[#D2A149]"
+              href="#"
+              >Explore and Find Coffee for Home</a
+            >
+          </div>
         </div>
       </div>
       <hr class="my-[2rem] border border-[#f1f8f6] mx-[4rem]" />
 
       <div class="mx-[4rem]">
-        <div class="flex flex-row">
+        <div
+          class="flex flex-row justify-center sm:justify-center md:justify-start lg:justify-start"
+        >
           <a
             class="w-[2rem] h-[2rem] flex rounded-full justify-center items-center mr-[1rem] hover:shadow-[0_0_6px_2px_white]"
             href="#"
@@ -658,7 +705,9 @@
             <i class="fab fa-twitter text-[#1e3932]"></i>
           </a>
         </div>
-        <div class="flex flex-col mt-[1rem]">
+        <div
+          class="flex flex-col mt-[1rem] text-center sm:text-center md:text-start lg:text-start"
+        >
           <a
             class="mt-[1rem] text-[#f1f8f6] text-[0.9rem] font-sans hover:underline"
             href="#"
